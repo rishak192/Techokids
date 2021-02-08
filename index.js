@@ -52,7 +52,7 @@ const fileFilter = (req, file, cb) => {
 const upload = multer({ storage: storage, fileFilter: fileFilter });
 
 app.get('/', (req, res) => {
-    res.send('Welcome')
+    res.render('index')
 });
 
 app.post("/addproduct", upload.single('image'), async (req, res, next) => {
