@@ -52,7 +52,7 @@ const fileFilter = (req, file, cb) => {
 const upload = multer({ storage: storage, fileFilter: fileFilter });
 
 app.get('/', (req, res) => {
-    res.render('index')
+    res.send('Welcome')
 });
 
 app.post("/addproduct", upload.single('image'), async (req, res, next) => {
@@ -134,4 +134,4 @@ app.get('/cartitems', async (req, res) => {
     })
 })
 
-app.listen(5000);
+app.listen(process.env.Port || 4000);
