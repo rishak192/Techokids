@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    
+    fetch('/getproduct', {
+        method: 'get',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    }).then((res) => res.json())
+        .then((json) => {
+            console.log(json.mes);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+
+    fetch('/addtocart/6020d6f7471dd4356d63b777', {
+        method: 'get',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    }).then((res) => res.json())
+        .then((json) => {
+            console.log(json.mes);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+
+    fetch('/update/:newquant', {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    }).then((res) => res.json())
+        .then((json) => {
+            console.log(json.mes);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+
+        fetch('/cartitems', {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    }).then((res) => res.json())
+        .then((json) => {
+            console.log(json.mes);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+</script>
+
+<body>
+
+</body>
+
+</html>
