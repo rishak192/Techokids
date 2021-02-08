@@ -1,6 +1,6 @@
 
 
-fetch('http://localhost:4000/getproduct', {
+fetch('https://ristechkids.herokuapp.com/getproduct', {
     method: 'get',
     headers: {
         'Accept': 'application/json',
@@ -14,7 +14,7 @@ fetch('http://localhost:4000/getproduct', {
         console.error(error);
     });
 
-fetch('http://localhost:4000/addtocart/6020d6f7471dd4356d63b777', {
+fetch('https://ristechkids.herokuapp.com/addtocart/6020d6f7471dd4356d63b777', {
     method: 'get',
     headers: {
         'Accept': 'application/json',
@@ -28,7 +28,7 @@ fetch('http://localhost:4000/addtocart/6020d6f7471dd4356d63b777', {
         console.error(error);
     });
 
-fetch('http://localhost:4000/update/6020dc9210803c3c88c23a0b/200', {
+fetch('https://ristechkids.herokuapp.com/update/6020dc9210803c3c88c23a0b/200', {
     method: 'get',
     headers: {
         'Accept': 'application/json',
@@ -42,7 +42,7 @@ fetch('http://localhost:4000/update/6020dc9210803c3c88c23a0b/200', {
         console.error(error);
     });
 
-fetch('http://localhost:4000/cartitems', {
+fetch('https://ristechkids.herokuapp.com/cartitems', {
     method: 'get',
     headers: {
         'Accept': 'application/json',
