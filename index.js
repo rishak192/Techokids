@@ -134,4 +134,4 @@ app.get('/cartitems', async (req, res) => {
     })
 })
 
-app.listen(process.env.Port || 4000);
+app.listen(process.env.PORT || 4000);
